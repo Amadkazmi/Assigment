@@ -8,13 +8,13 @@ namespace Assignment4
 {
     public class Order
     {
-        public int Id { get; set; }
-        public DateTime Date { get; set; }
-        public DateTime Required { get; set; }
-        public DateTime? Shipped { get; set; }
-        public decimal Freight { get; set; }
-        public string ShipName { get; set; }
-        public string ShipCity { get; set; }
-        public List<OrderDetails> OrderDetails { get; set; } = new List<OrderDetails>();
+        public int Id { get; set; }                           // Default: 0
+        public DateTime Date { get; set; }                    // Default: DateTime.MinValue
+        public DateTime Required { get; set; }                // Default: DateTime.MinValue
+        public DateTime? Shipped { get; set; }                // Nullable - can be null
+        public decimal Freight { get; set; }                  // Default: 0
+        public string ShipName { get; set; }                  // Default: null
+        public string ShipCity { get; set; }                  // Default: null
+        public List<OrderDetails> OrderDetails { get; set; }  // Default: null
     }
 }
