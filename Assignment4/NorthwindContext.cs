@@ -11,7 +11,7 @@ namespace Assignment4
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // PostgreSQL connection string
-            optionsBuilder.UseNpgsql(@"Host=localhost;Database=postgres;Username=postgres;Password=root");
+            optionsBuilder.UseNpgsql(@"Host=localhost;Database=postgres;Username=postgres;Password=2834");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
